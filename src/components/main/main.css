@@ -1,0 +1,133 @@
+.main {
+    display: flex;
+    height: 100vh;
+    justify-content: flex-start;
+    margin-left: 5%;
+    width: 95%;
+}
+
+.main-div-holder {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.nav-bar-main {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 1rem 2rem 0.5rem 2rem;
+    box-shadow: 0.5px 0.5px 0.5px #c2c1c1b0;
+    height: fit-content;
+}
+
+.nav-bar-main .left-nav {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    text-align: left;
+}
+.currency {
+    color: var(--color-primary);
+    font-weight: 600;
+}
+.left-nav h3 {
+    color: #000;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    /* display: none; */
+    position: absolute;
+    right: 2%;
+    border-radius: 0.2rem;
+    top: 10%;
+    background-color: #f9f9f9;
+    width: fit-content;
+    padding: 1.5rem 0.3rem;
+    box-shadow: 1px 1px 2px var(--color-text);
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    border-radius: 0.2rem;
+    width: 100%;
+    transition: var(--transition);
+    padding: 1rem 2.5rem;
+    display: block;
+  }
+
+  
+.dropdown-content a:hover{
+    background-color: #f1f1f1;
+    color: var(--color-primary);
+  }
+.show-me-pp {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 50%;
+  margin: 0.5rem 0;
+}
+.show-me-pp img{
+  width: 4rem;
+}
+
+.god-boss {
+  display: none;
+  transition: var(--transition);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: #eeeeee17;
+  z-index: 99;
+  backdrop-filter: blur(2px);
+}
+  
+.show {
+    display: block !important;
+  }
+
+.nav-bar-main .right-nav {
+    display: flex;
+    width: 30%;
+    gap: 1.5rem;
+    align-items: center;
+    justify-content:flex-end;
+}
+
+.left-wilding {
+  display: none;
+}
+
+@media screen and (max-width: 1024px) {
+  .main {
+     width: 100%;
+     margin-left: 0;
+  }
+  .left-nav {
+    display: none !important;
+  }
+  .nav-bar-main {
+    padding-left: 0.2rem;
+    padding-right: 0.2rem;
+    align-items: center;
+  }
+  .right-nav {
+    width: 100% !important;
+  }
+  .left-wilding {
+     display: block;
+  }
+  .left-wilding span {
+    font-size: 2rem;
+  }
+}

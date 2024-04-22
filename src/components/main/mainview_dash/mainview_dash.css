@@ -1,0 +1,417 @@
+.main-view-dashboard {
+    height: 73%;
+    /* flex-grow: 0.8; */
+    min-height: fit-content;
+    position: relative;
+    display: flex;
+}
+.main-focus {
+    width: 70%;
+    /* background-color: red; */
+    display: flex;
+    height: 100%;
+    box-shadow: 0.5px 0.5px 0.5px #c2c1c1b0;
+    flex-direction: column;
+}
+
+
+/* ######################################################   Side Focus ################################################# */
+.side-focus {
+    width: 30%;
+}
+.nav-tabs-side {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: flex-start;
+    /* padding: 1rem; */
+    /* height: 10%; */
+    border-bottom: 0.1px solid #c2c1c1b0;
+    height: fit-content;
+}
+.nav-tabs-side p {
+    padding: 0.55rem 1.5rem;
+    cursor: pointer;
+    transition: var(--transition);
+}
+.nav-1-1p {
+    color: var(--color-tr-bg);
+    border-bottom: 2px solid var(--color-tr-bg);
+}
+.side-main-1 {
+    padding: 1rem;
+    overflow: auto;
+    height: 100%;
+}
+.tile-0101 {
+    text-align: left;
+    color: var(--color-tr-bg);
+}
+.model-card-1 {
+    display: flex;
+    flex-direction: column;
+    border-radius: 0.3rem;
+    margin: 1rem 0;
+}
+.model-name {
+    text-align: left;
+    color: var(--color-tr-bg);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.model-name span {
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+.model-info {
+    text-align: left;
+    margin: 0.5rem 0;
+}
+.supported-lang-1 ul {
+    display: flex;
+    gap: 0.5rem;
+    overflow: hidden;
+}
+.supported-lang-1 ul li {
+    border: 0.5px solid #c2c1c1b0;
+    padding: 0.5rem;
+}
+.variables-tune {
+    padding: 1rem 0;
+    overflow: auto;
+}
+.tun-1-d {
+    text-align: left;
+    color: var(--color-tr-bg);
+}
+.ranges-1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0.5rem 0;
+}
+
+.tune-1 {
+    margin: 0.5rem 0;
+}
+
+.tune0-1 {
+    width: 100%;
+    cursor: pointer;
+}
+
+/********** Range Input Styles **********/
+
+ 
+ /* Removes default focus */
+ /***** Chrome, Safari, Opera and Edge Chromium styles *****/
+ /* slider track */
+ .tune-1 input[type="range"]::-webkit-slider-runnable-track {
+    /* background-color: #ccc;
+    border-radius: 0.5rem;
+    height: 0.5rem;   */
+    border: 0;
+    outline: 0;
+ }
+ 
+ /* slider thumb */
+ .tune-1 input[type="range"]::-webkit-slider-thumb {
+    background-color: var(--color-tr-bg);
+ }
+ 
+ .tune0-1 {
+    height: 0.2rem;
+    outline: 0;
+    background-color: #ccc;
+    accent-color: var(--color-tr-bg);
+ }
+
+ 
+ /******** Firefox styles ********/
+ /* slider track */
+ .tune-1 input[type="range"]::-moz-range-track {
+    background-color: #ccc;
+    border-radius: 0.5rem;
+ }
+ 
+ /* slider thumb */
+ .tune-1 input[type="range"]::-moz-range-thumb {
+    border-color: var(--color-tr-bg);
+    background: var(--color-tr-bg);
+    border-radius: 50%;
+    cursor: pointer;
+ }
+
+ .tune-1 input[type="range"]::-moz-range-progress {
+    border-radius: 0.2rem;
+    background-color: var(--color-tr-bg); 
+  }
+
+
+ 
+/* ######################################################   SIde Focus ends ################################################# */
+
+
+.sel-content-1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 0.1rem;
+    height: fit-content;
+    border-bottom: 0.1px solid #c2c1c1b0;
+    /* padding: 0.1rem 1rem; */
+    align-items: center;
+}
+.select-contents {
+    padding: 0.5rem 1.5rem;
+    /* box-shadow: 0.5px 0.5px 0.5px #c2c1c1b0; */
+    cursor: pointer;
+    font-size: 0.9rem;
+    text-transform:uppercase;
+    transition: var(--transition);
+}
+.sel-content-2 {
+    height: 100%;
+}
+
+.doc-upload-focus {
+    height: 100%;
+}
+
+.s1-c1-active {
+    color: var(--color-text-dark);
+    font-weight: 600;
+    border-bottom: 2px solid var(--color-tr-bg);
+}
+.wrt-1-dc-1 {
+    height: 100%;
+}
+.wrt-1-dc-1 textarea {
+    resize: none;
+}
+#main-input-box-1 {
+    text-align: left;
+    width: 100%;
+    padding: 1rem;
+    height: 100%;
+    /* box-shadow: 0.5px 0.5px 0.5px #dfdedeb0; */
+}
+.file-upload {
+    height: 100%;
+    z-index: 1;
+    box-shadow: 0.5px 0.5px 0.5px #c2c1c1b0;
+}
+.file-up-oj-1 {
+    padding: 0.5rem 1rem;
+    border: 0.5px solid #c2c1c1b0;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    text-transform: capitalize;
+    color: var(--color-text-dark);
+    transition: var(--transition);
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+.fl-up-oj {
+    display: flex;
+    gap: 1rem;
+    justify-content: flex-start;
+    width: 100%;
+    padding: 0.5rem 1rem;
+    height: fit-content;
+    align-items: center;
+}
+/* .file-upload form {
+} */
+.b-1-1 {
+    transform: translateY(50%);
+    margin: 1rem ;
+    padding: 1rem;
+}
+.file-up-oj-1 span:hover {   
+    color: var(--color-primary);
+}
+.file-up-oj-1 small:hover {
+    color: red;
+    cursor: pointer;
+}
+.gp1-1 {
+    transform: translate(-50%, -50%);
+    position: relative;
+    top: 50%;
+    left: 50%;
+}
+#file-upload-1 {
+    display: none;
+}
+.inp-cl-dv-1 {
+    padding: 1rem 2rem;
+    border: 1px solid #c2c1c1b0;
+    width: fit-content;
+    transform: translate(-50%, -50%);
+    position: relative;
+    top: 50%;
+    left: 50%;
+    border-radius: 0.2rem;
+    cursor: pointer;    
+    transition: var(--transition);
+}
+.inp-cl-dv-1:hover {
+    color: var(--color-text-dark);
+    border: 1px solid var(--color-text-dark);
+}
+.drop-area {
+    color: var(--color-text-dark);
+}
+.img-name {
+    display: flex;
+    align-items: center;
+    border: 1px solid #c2c1c1b0;
+    padding: 0.5rem;
+    border-radius: 0.2rem;
+    justify-content: space-between;
+    cursor: pointer;
+}
+.img-name img{
+    width: 3rem;
+}
+#search-voices {
+    padding: 0.6rem;
+    border: 0.5px solid #c2c1c1b0;
+    border-radius: 0.3rem;
+    width: 100%;
+}
+.u-d-1 {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+}
+.drp-1-12 {
+    width: 35%;
+    margin-left: 1%;
+    border-radius: 0.2rem;
+    height: 40%;
+    top: 45%;
+    background-color: var(--color-bg);
+    border: 1px solid #c2c1c1b0;
+    position: fixed;
+    overflow: auto;
+    padding: 0.3rem;
+    border-radius: 0.3rem;
+}
+
+.drp-1-12 ul li {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 0.3rem;
+    padding: 0.1rem 0.4rem;
+    margin: 0.1rem 0;
+}
+.aa-aa {
+    width: 100%;
+}
+.aa-aa button {
+    width: 95%;
+    border-radius: 0.3rem;
+    font-weight: 600;
+    background-color: var(--color-bg);
+    border: 1px solid #c2c1c1b0;
+    cursor: pointer;
+    margin: 0.4rem 0;
+    padding: 0.6rem 1rem;
+}
+.drp-1-active {
+    background: #e4e3e3b0;
+}
+.drp-1-12 li:hover {
+    background: #e4e3e3b0;
+    color: var(--color-text-dark);
+}
+.drp-1-12 img {
+    width: 3rem;
+}
+.gen-1 {
+    background-color: var(--color-tr-bg);
+    color: var(--color-bg);
+    font-weight: 600;
+    padding: 0.7rem 1rem;
+    height: fit-content;
+    font-size: 1rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: var(--transition);
+}
+.gen-1:hover {
+    opacity: 0.98;
+}
+.show-audio-12 {
+    position: fixed;
+    bottom: 2%;
+    background: var(--color-tr-bg);
+    color: var(--color-bg);
+    justify-content: center;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    right: 5%;
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding: 1rem;
+    width: 2.5rem;
+    height: 2.5rem;
+}
+.full-001 {
+    height: 82% !important;
+}
+.model-card-11 {
+    border: 0.3px solid #ccc;
+    padding: 1rem;
+    border-radius: 0.3rem;
+}
+.box-hol-1 {
+    display: flex;
+    gap: 1rem;
+    padding: 1rem;
+}
+.boxes-1-1 {
+    border: 0.3px solid #ccc;
+    margin: 0.5rem;
+    border-radius: 0.3rem;
+    padding: 1rem;
+}
+.aud-side-text {
+    text-align: left;
+    outline: 0.5px solid #c2c1c1b0;
+    padding: 0.7rem;
+    border-radius: 0.3rem;
+    height: 6rem;
+    overflow: hidden;
+}
+.aud-side-text span {
+    color: var(--color-tr-bg);
+    font-weight: 600;
+}
+.name-his-1 {
+    text-align: left;
+    font-weight: 600;
+    color: var(--color-text-dark);
+}
+.box-hol-1 span{
+    font-size: 2rem;
+    color: var(--color-tr-bg);
+}
+.box-hol-1 input[type="range"] {
+    width: 100%;
+    accent-color: var(--color-tr-bg);
+}
+.side-main-2 {
+    overflow: auto;
+    height: 100%;
+}
+

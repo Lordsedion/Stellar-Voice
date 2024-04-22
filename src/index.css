@@ -1,0 +1,120 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+
+
+*  {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  border: 0;
+  outline: 0;
+  box-sizing: border-box;
+  font-family: BinancePlex,Arial,sans-serif!important;    text-decoration: none;
+  font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+}
+
+button {
+  background: #c1bfbf7e;
+  padding: 0.24rem 1.3rem;
+  border-radius: 0.2rem;
+}
+
+.block {
+  display: block !important;
+}
+.none {
+  display: none !important;
+}
+:root {
+  --color-primary: rgb(2, 52, 202);
+  --color-primary-dark: rgb(18, 56, 170);
+  --color-bg: #fff;
+  --color-text: #575656cb;
+  --color-text-dark: #0f0f0ff1;
+  --color-white: #fff;
+  --color-r-bg: rgba(9, 9, 12, 0.495);
+  --color-tr-bg: rgb(5, 5, 5);
+  --transparent: #ffffff00;
+  --color-light-text: rgb(40, 40, 40);
+  --transition: all 0.2s ease;
+  --card-color: #fff;
+}
+ 
+[data-theme='dark'] {
+  --color-text: #fff;
+  --color-text-dark: #f1f1f1f1;
+  --transparent: rgb(9, 9, 12);
+  --color-bg: rgb(9, 9, 12);
+  --color-tr-bg: rgb(255, 255, 255);
+  --color-r-bg: rgb(255, 255, 255);
+  --color-text: rgb(255, 255, 255);
+  --color-light-text: rgb(255, 255, 255);
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+  font-size: 0.8rem;
+}
+#root {
+  color: var(--color-text);
+  background-color: var(--color-bg);
+}
+/* width */
+::-webkit-scrollbar {
+  width: 2px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+  background: #ffffff;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--color-tr-bg);
+  border-radius: 0.1rem;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #191818;
+}
+
+.color-primary {
+  color: var(--color-primary) !important;
+}
+.white {
+  color: #fff !important;
+}
+.none {
+  display:none;
+}
+.border-radius {
+  border-radius: 0.3rem;
+}
+.bg-color {background: var(--color-bg)}
+.bg-primary {
+  background: var(--color-primary) !important;
+}
+p {
+  font-size: 0.89rem;
+}
+div {
+  font-size: 0.89rem;
+}
+h1 {
+  font-size: 2.8rem;
+}
+h3 {
+  font-size: 1.6rem;
+}
+h4 {
+  font-size: 1.1rem;
+}
+h2 {
+  font-size: 2rem;
+}
+
