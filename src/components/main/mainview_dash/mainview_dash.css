@@ -415,3 +415,18 @@
     height: 100%;
 }
 
+@media screen and (max-width:1100px) {
+    .side-focus {
+        display: none;
+    }
+    .main-focus {
+        width: 100%;
+    }
+    #main-input-box-1 {
+        width: 97%;
+    }
+    .main-view-dashboard {
+        height: 80%;
+    }
+}
+
