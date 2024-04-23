@@ -1,5 +1,5 @@
 
-import React, { useEffect } from 'react'
+import React, { useContext, useEffect } from 'react'
 import { useState} from 'react'
 import './mainview_dash.css'
 import MultipleFileUploader from './File';
@@ -7,17 +7,23 @@ import char from '../../../logo.svg'
 import { IoMdArrowDropdown } from "react-icons/io";
 import AudioBar from './audio/Audio';
 import { SlArrowUp } from 'react-icons/sl';
-import { FaPlayCircle, FaPauseCircle } from "react-icons/fa";
+import { FaPlayCircle, FaPauseCircle, FaTimes } from "react-icons/fa";
 import { IoReturnUpForwardOutline } from 'react-icons/io5';
+import { GlobalContext } from '../Main';
 
 
 const MainViewDash = () => {
     const [toggle, setToggle] = useState(1);
     const [content, setContent] = useState("")
     const [voice, setVoice] = useState(false)
-    const [currentTime, setCurrentTime] = useState(0);
-    const [pause, setPause] = useState(false);
     const [toggleSide, setToggleSide] = useState(true)
+
+    const useCont = useContext(GlobalContext)
+    const setPause = useCont!.setPause
+    const pause = useCont!.pause
+    const currentTime = useCont!.currentTime
+
+    const setCurrentTime = useCont!.setCurrentTime
 
     const handlePause = () => {
         setPause(!pause);
@@ -110,16 +116,30 @@ const MainViewDash = () => {
                 
                 <div className="u-d-1">
                 
-                <p className="img-name"
-                onClick={()=> {setVoice(true)}}
-                ><span onClick={handlePause}>{!pause ? <FaPlayCircle/> : <FaPauseCircle/>}</span> <span>Joshua Okechukwu</span> <span className='d-1arr'><IoMdArrowDropdown/></span></p>
+                <div className="gandalf">
+                    <p className="img-name"
+                        onClick={()=> {setVoice(true)}}
+                    >
+                        <span onClick={handlePause}>{!pause ? <FaPlayCircle/> : <FaPauseCircle/>}</span> <span>Joshua Okechukwu</span> <span className='d-1arr'><IoMdArrowDropdown/></span>
+                    </p>
+                <button className="gen-12" onClick={()=> {
+                    document.querySelector("#side-focus")?.classList.remove("side-focus-destroy")
+                    document.querySelector("#side-focus")?.classList.add("side-focus-11")
+                    document.querySelector("#goku")?.classList.remove("none")
+                }}>Settings</button>
+                </div>
                 <button className="gen-1">Generate Speech</button>
             </div>
             </div>
             
         </div>
 
-        <div className="side-focus">
+        <div className="side-focus" id='side-focus'>
+            <p className='goku' id="goku" onClick={()=> {
+                document.querySelector("#side-focus")?.classList.add("side-focus-destroy")
+                document.querySelector("#goku")?.classList.add("none")
+                // document.querySelector("#side-focus")?.classList.remove("side-focus-11")
+            }}><FaTimes/></p>
             <div className="nav-tabs-side">
                 <p className={`${toggleSide ? 'nav-1-1p': ''}`} onClick={()=> {setToggleSide(true)}}>Settings</p>
                 <p className={`${!toggleSide ? 'nav-1-1p': ''}`} onClick={()=> {setToggleSide(false)}}>History</p>

@@ -86,6 +86,7 @@
 }
 
 .navbar > div > a:hover span {
+    color: var(--color-tr-bg);
     transition: var(--transition);
 }
 
