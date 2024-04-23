@@ -135,7 +135,9 @@
     cursor: pointer;
     font-weight: 700;
 }
-
+.play-icon small {
+    display: none;
+}
 @keyframes anime {
     from {
         bottom: 0%;
@@ -158,3 +160,57 @@
         padding: 0.4rem 0.5rem;
     }
 }
+@media screen and (max-width:1024px) {
+    .audio-bel-1 {
+        padding: 0;
+        max-height: 18%;
+    }
+    .main-audio-con {
+        flex-direction: column-reverse;
+    }
+    .main-length {
+        flex-direction: column;
+    }
+    .main-aud-title {
+        padding: 0rem 0.5rem;
+    }
+    .rem-time {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        padding: 0.3rem;
+    }
+    .rem-time small {
+        display: none;
+    }
+    .utility-buttons-1 {display: none;}
+    .for-back-1 {
+        display: none;
+    }
+    .audio-more-1 {
+        flex-direction: column;
+    }
+    .range-audio {
+        width: 100%;
+        margin: 0 0.2rem;
+        height: 0.15rem;
+    }
+    .range-audio::-moz-range-track {
+        height: 0.15rem;
+    }
+    .play-icon {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
+    .play-icon small {
+        display: inline-block;
+        font-size: 1.5rem;
+        color: var(--color-tr-bg);
+    }
+    .main-view-dashboard {
+        height: 72%;
+        overflow: auto;
+    }
+}
+

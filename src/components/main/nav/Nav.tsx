@@ -6,7 +6,6 @@ import { RiAiGenerate } from "react-icons/ri";
 import { IoMdSettings } from "react-icons/io";
 import { GrContact } from "react-icons/gr";
 import { BsQuestionSquareFill } from "react-icons/bs";
-
 import logo from "../../../logo.svg"
 
 export const Nav = () => {
