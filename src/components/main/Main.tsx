@@ -7,7 +7,6 @@ import MainViewDash from "./mainview_dash/MainViewDash";
 function Main() {
   return (
     <div className="main">
-      <Nav/>
       <div className="main-div-holder">
         <MainView/>
         <MainViewDash/>

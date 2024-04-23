@@ -27,10 +27,10 @@ export const Nav = () => {
                     <a href="#"><span className='nav-icons'><FaHome/></span><span className='dp-on-hover'>Home</span></a>
                     <a href="#"><span className='nav-icons'><MdOutlineExplore/></span><span className='dp-on-hover'>Explore</span></a>
                 
-                    <a href="#"><span className='nav-icons'><MdOutlineTranslate /></span><span className='dp-on-hover'>Translate</span></a>
+                    <a href="#"><span className='nav-icons'><MdOutlineTranslate /></span><span className='dp-on-hover'>History</span></a>
                     {/* <a href="#"><span className='nav-icons'><RiAiGenerate/></span><span className='dp-on-hover'>Generate</span></a> */}
                 
-                    {/* <a href="#"><span className='nav-icons'><IoMdSettings/></span><span className='dp-on-hover'>Settings</span></a> */}
+                    <a href="#"><span className='nav-icons'><IoMdSettings/></span><span className='dp-on-hover'>Settings</span></a>
                     <a href="#"><span className='nav-icons'><FaMoneyBillWave/></span><span className='dp-on-hover'>Billing</span></a>
                     <a href="#"><span className='nav-icons'><FaCode/></span><span className='dp-on-hover'>API</span></a>
                 </div>
